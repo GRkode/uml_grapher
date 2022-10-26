@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class UmlParentTest {
     @Test
     void empty_interface_with_no_relation() {
-        Class<?>[] theClasses = {Wild.Animal.Ant.class, Wild.Animal.Cat.class, Wild.Plant.Tree.Alder.class};
+        Class<?>[] theClasses = {Living.Animal.Ant.class, Living.Animal.Cat.class, Living.Plant.Tree.Alder.class};
         UmlGraph graph = new UmlGraph(theClasses);
         String output = graph.as(GraphType.Mermaid);
 
